@@ -1,0 +1,25 @@
+<head>
+  <title>Club M. G. H. T. &amp; Sc.</title>
+</head>
+
+<body>
+  <div class="jumbotron">
+   <div class="container">
+       <h1>Club Math Geography History Technology &amp; Science</h1>
+       <p>
+         {{> loginButtons}}
+       </p>
+    </div>
+
+    <div class="container">
+{{#if currentUser}}
+    <h2>Welcome {{ currentUser.username }}</h2>
+  {{else}}
+    <h2>About</h2>
+    <p>This is club is made to help people in their maths, geography, history, technology and science.</p>
+{{/if}}  
+    </div>
+  </div>
+
+</body>
+
